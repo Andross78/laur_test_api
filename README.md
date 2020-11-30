@@ -33,3 +33,9 @@ You can generate postman_collection.json
   python manage.py generateschema --format openapi > schema.yml
 
 Add schema.yml content to new collection in postman and export it.
+
+To use flake8 you need to install it:
+  docker-compose run web su
+  pip install flake8
+  flake8 .
+  
