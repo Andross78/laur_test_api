@@ -1,0 +1,1039 @@
+{
+	"info": {
+		"_postman_id": "b540acfb-923e-4ef5-abf1-c5fb6bf5cd54",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "posts",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "retrieve Post",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/posts/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"posts",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) A unique integer value identifying this post."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Response",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/posts/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"posts",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"title\": \"<string>\",\n \"link\": \"<string>\",\n \"id\": -96446125,\n \"content\": \"<string>\",\n \"created_on\": \"1944-06-14T06:37:13.485Z\",\n \"upvotes\": \"<integer>\",\n \"author\": \"<integer>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "update Post",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "title",
+											"value": "<string>"
+										},
+										{
+											"key": "link",
+											"value": "<string>"
+										},
+										{
+											"key": "content",
+											"value": "<string>"
+										},
+										{
+											"key": "upvotes",
+											"value": "<integer>"
+										},
+										{
+											"key": "author",
+											"value": "<integer>"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/posts/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"posts",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) A unique integer value identifying this post."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Response",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "title",
+													"value": "<string>",
+													"description": {
+														"content": "",
+														"type": "text/plain"
+													}
+												},
+												{
+													"key": "link",
+													"value": "<string>",
+													"description": {
+														"content": "",
+														"type": "text/plain"
+													}
+												},
+												{
+													"key": "content",
+													"value": "<string>",
+													"description": {
+														"content": "",
+														"type": "text/plain"
+													}
+												},
+												{
+													"key": "upvotes",
+													"value": "<integer>",
+													"description": {
+														"content": "",
+														"type": "text/plain"
+													}
+												},
+												{
+													"key": "author",
+													"value": "<integer>",
+													"description": {
+														"content": "",
+														"type": "text/plain"
+													}
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseUrl}}/posts/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"posts",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"title\": \"<string>\",\n \"link\": \"<string>\",\n \"id\": -96446125,\n \"content\": \"<string>\",\n \"created_on\": \"1944-06-14T06:37:13.485Z\",\n \"upvotes\": \"<integer>\",\n \"author\": \"<integer>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "partial Update Post",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "title",
+											"value": "<string>"
+										},
+										{
+											"key": "link",
+											"value": "<string>"
+										},
+										{
+											"key": "content",
+											"value": "<string>"
+										},
+										{
+											"key": "upvotes",
+											"value": "<integer>"
+										},
+										{
+											"key": "author",
+											"value": "<integer>"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/posts/:id/upvote/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"posts",
+										":id",
+										"upvote",
+										""
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) A unique integer value identifying this post."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Response",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "title",
+													"value": "<string>",
+													"description": {
+														"content": "",
+														"type": "text/plain"
+													}
+												},
+												{
+													"key": "link",
+													"value": "<string>",
+													"description": {
+														"content": "",
+														"type": "text/plain"
+													}
+												},
+												{
+													"key": "content",
+													"value": "<string>",
+													"description": {
+														"content": "",
+														"type": "text/plain"
+													}
+												},
+												{
+													"key": "upvotes",
+													"value": "<integer>",
+													"description": {
+														"content": "",
+														"type": "text/plain"
+													}
+												},
+												{
+													"key": "author",
+													"value": "<integer>",
+													"description": {
+														"content": "",
+														"type": "text/plain"
+													}
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseUrl}}/posts/:id/upvote/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"posts",
+												":id",
+												"upvote",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"title\": \"<string>\",\n \"link\": \"<string>\",\n \"id\": -96446125,\n \"content\": \"<string>\",\n \"created_on\": \"1944-06-14T06:37:13.485Z\",\n \"upvotes\": \"<integer>\",\n \"author\": \"<integer>\"\n}"
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "list Posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/posts/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"posts",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/posts/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"posts",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"title\": \"mol\",\n  \"link\": \"el\",\n  \"id\": -5036728,\n  \"content\": \"voluptate Duis minim\",\n  \"created_on\": \"1968-07-26T09:03:33.442Z\",\n  \"upvotes\": 218849426,\n  \"author\": 16581664\n },\n {\n  \"title\": \"e\",\n  \"link\": \"\",\n  \"id\": -15254995,\n  \"content\": \"in consectetur irure\",\n  \"created_on\": \"1947-11-03T22:52:07.319Z\",\n  \"upvotes\": 378627687,\n  \"author\": -97573628\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "create Post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "<string>"
+								},
+								{
+									"key": "link",
+									"value": "<string>"
+								},
+								{
+									"key": "content",
+									"value": "<string>"
+								},
+								{
+									"key": "upvotes",
+									"value": "<integer>"
+								},
+								{
+									"key": "author",
+									"value": "<integer>"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/posts/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"posts",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "title",
+											"value": "<string>",
+											"description": {
+												"content": "",
+												"type": "text/plain"
+											}
+										},
+										{
+											"key": "link",
+											"value": "<string>",
+											"description": {
+												"content": "",
+												"type": "text/plain"
+											}
+										},
+										{
+											"key": "content",
+											"value": "<string>",
+											"description": {
+												"content": "",
+												"type": "text/plain"
+											}
+										},
+										{
+											"key": "upvotes",
+											"value": "<integer>",
+											"description": {
+												"content": "",
+												"type": "text/plain"
+											}
+										},
+										{
+											"key": "author",
+											"value": "<integer>",
+											"description": {
+												"content": "",
+												"type": "text/plain"
+											}
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/posts/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"posts",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"title\": \"<string>\",\n \"link\": \"<string>\",\n \"id\": -96446125,\n \"content\": \"<string>\",\n \"created_on\": \"1944-06-14T06:37:13.485Z\",\n \"upvotes\": \"<integer>\",\n \"author\": \"<integer>\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "comments",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "retrieve Comment",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/comments/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"comments",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) A unique integer value identifying this comment."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Response",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/comments/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"comments",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"content\": \"<string>\",\n \"post\": \"<integer>\",\n \"comment_author\": \"<integer>\",\n \"id\": 72778357,\n \"created_on\": \"2018-03-20T17:59:56.355Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "update Comment",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "content",
+											"value": "<string>"
+										},
+										{
+											"key": "post",
+											"value": "<integer>"
+										},
+										{
+											"key": "comment_author",
+											"value": "<integer>"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/comments/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"comments",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) A unique integer value identifying this comment."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Response",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "content",
+													"value": "<string>",
+													"description": {
+														"content": "",
+														"type": "text/plain"
+													}
+												},
+												{
+													"key": "post",
+													"value": "<integer>",
+													"description": {
+														"content": "",
+														"type": "text/plain"
+													}
+												},
+												{
+													"key": "comment_author",
+													"value": "<integer>",
+													"description": {
+														"content": "",
+														"type": "text/plain"
+													}
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseUrl}}/comments/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"comments",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"content\": \"<string>\",\n \"post\": \"<integer>\",\n \"comment_author\": \"<integer>\",\n \"id\": 72778357,\n \"created_on\": \"2018-03-20T17:59:56.355Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "partial Update Comment",
+							"request": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/x-www-form-urlencoded"
+									}
+								],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "content",
+											"value": "<string>"
+										},
+										{
+											"key": "post",
+											"value": "<integer>"
+										},
+										{
+											"key": "comment_author",
+											"value": "<integer>"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/comments/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"comments",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) A unique integer value identifying this comment."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Response",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "content",
+													"value": "<string>",
+													"description": {
+														"content": "",
+														"type": "text/plain"
+													}
+												},
+												{
+													"key": "post",
+													"value": "<integer>",
+													"description": {
+														"content": "",
+														"type": "text/plain"
+													}
+												},
+												{
+													"key": "comment_author",
+													"value": "<integer>",
+													"description": {
+														"content": "",
+														"type": "text/plain"
+													}
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseUrl}}/comments/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"comments",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										}
+									],
+									"cookie": [],
+									"body": "{\n \"content\": \"<string>\",\n \"post\": \"<integer>\",\n \"comment_author\": \"<integer>\",\n \"id\": 72778357,\n \"created_on\": \"2018-03-20T17:59:56.355Z\"\n}"
+								}
+							]
+						},
+						{
+							"name": "destroy Comment",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/comments/:id/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"comments",
+										":id",
+										""
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<string>",
+											"description": "(Required) A unique integer value identifying this comment."
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Untitled Response",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/comments/:id/",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"comments",
+												":id",
+												""
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "text/plain"
+										}
+									],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "list Comments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/comments/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"comments",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Response",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/comments/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"comments",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "[\n {\n  \"content\": \"officia minim dolore ut adipisicing\",\n  \"post\": -52506912,\n  \"comment_author\": -58699499,\n  \"id\": 25018424,\n  \"created_on\": \"1954-05-28T12:12:58.066Z\"\n },\n {\n  \"content\": \"anim deserunt\",\n  \"post\": 53655871,\n  \"comment_author\": -76793551,\n  \"id\": 56513528,\n  \"created_on\": \"1943-01-04T19:49:21.544Z\"\n }\n]"
+						}
+					]
+				},
+				{
+					"name": "create Comment",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "content",
+									"value": "<string>"
+								},
+								{
+									"key": "post",
+									"value": "<integer>"
+								},
+								{
+									"key": "comment_author",
+									"value": "<integer>"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/comments/",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"comments",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Untitled Response",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "urlencoded",
+									"urlencoded": [
+										{
+											"key": "content",
+											"value": "<string>",
+											"description": {
+												"content": "",
+												"type": "text/plain"
+											}
+										},
+										{
+											"key": "post",
+											"value": "<integer>",
+											"description": {
+												"content": "",
+												"type": "text/plain"
+											}
+										},
+										{
+											"key": "comment_author",
+											"value": "<integer>",
+											"description": {
+												"content": "",
+												"type": "text/plain"
+											}
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/comments/",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"comments",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								}
+							],
+							"cookie": [],
+							"body": "{\n \"content\": \"<string>\",\n \"post\": \"<integer>\",\n \"comment_author\": \"<integer>\",\n \"id\": 72778357,\n \"created_on\": \"2018-03-20T17:59:56.355Z\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"variable": [
+		{
+			"id": "baseUrl",
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
