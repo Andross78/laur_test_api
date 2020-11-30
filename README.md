@@ -4,9 +4,10 @@
 To run this project please follow next steps:
 
 Start it
-install docker - on ubuntu https://docs.docker.com/engine/install/ubuntu/ 
-               - on Mac https://docs.docker.com/docker-for-mac/install/
-               - on Windows https://docs.docker.com/docker-for-windows/install/
+install docker 
+- on ubuntu https://docs.docker.com/engine/install/ubuntu/ 
+- on Mac https://docs.docker.com/docker-for-mac/install/
+- on Windows https://docs.docker.com/docker-for-windows/install/
 
 On the command line, within this directory, do this to build the image and start the container:
   
