@@ -5,7 +5,8 @@ install docker
 - on Windows https://docs.docker.com/docker-for-windows/install/
 
 On the command line, within this directory, do this to build the image and start the container:
-  
+ 
+ - docker-compose build
  - docker-compose up
   
 Open http://0.0.0.0:8000 in your browser.
