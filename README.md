@@ -3,7 +3,7 @@
 
 To run this project please follow next steps:
 
-Start it
+# Start it
 install docker 
 - on ubuntu https://docs.docker.com/engine/install/ubuntu/ 
 - on Mac https://docs.docker.com/docker-for-mac/install/
