@@ -40,3 +40,6 @@ To use flake8 you need to install it:
  - pip install flake8
  - flake8 .
   
+To run reset post upvotes count
+ - docker-compose run web su
+ - python manage.py reset_upvotes
