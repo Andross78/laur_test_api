@@ -1,6 +1,3 @@
-# test_api
-
-
 # Start it
 install docker 
 - on ubuntu https://docs.docker.com/engine/install/ubuntu/ 
