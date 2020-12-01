@@ -4,6 +4,10 @@ install docker
 - on Mac https://docs.docker.com/docker-for-mac/install/
 - on Windows https://docs.docker.com/docker-for-windows/install/
 
+Install docker-compose
+
+- https://docs.docker.com/compose/install/
+
 On the command line, within this directory, do this to build the image and start the container:
  
  - docker-compose build
